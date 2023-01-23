@@ -1,0 +1,15 @@
+const button = document.querySelector("header button") 
+
+button.addEventListener('click', add)
+
+function add() {
+    const today = "01/01"
+    const dayExists = nlwSetup.dayExists(today)
+
+    if(dayExists) {
+        alert("dia já iniciou")
+        return
+    }
+
+    nlwSetup.addDay()
+}
